@@ -1,0 +1,1 @@
+web: gunicorn my_tracker_proyect.wsgi:application

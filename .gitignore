@@ -1,0 +1,18 @@
+# Directorios de entorno virtual
+venv/
+env/
+
+# Archivos de la base de datos
+db.sqlite3
+
+# Archivos de Python
+__pycache__/
+*.pyc
+
+# Archivos de Django
+staticfiles/
+media/
+
+# Archivos de sistema (Windows, macOS)
+.DS_Store
+Thumbs.db

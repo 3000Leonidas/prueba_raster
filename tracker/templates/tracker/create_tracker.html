@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Crear Rastreador de Enlaces</title>
+</head>
+<body>
+    <h1>Crear un nuevo Rastreador</h1>
+    <form method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        <label for="id_name">Nombre del rastreador:</label><br>
+        <input type="text" id="id_name" name="name" required><br><br>
+        <label for="id_image_to_show">Imagen a mostrar:</label><br>
+        <input type="file" id="id_image_to_show" name="image_to_show" accept="image/*"><br><br>
+        <button type="submit">Crear Rastreador</button>
+    </form>
+</body>
+</html>

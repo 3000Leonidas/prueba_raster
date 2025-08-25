@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Rastreador Creado</title>
+</head>
+<body>
+    <h1>¡Rastreador Creado con Éxito!</h1>
+    <p>Aquí está el enlace que debes compartir para rastrear a la persona:</p>
+    <pre>{{ tracking_url }}</pre>
+    <p>Puedes ver los resultados en el <a href="/admin/">panel de administración de Django</a>.</p>
+    <p>Esta es la imagen que se mostrará:</p>
+    {% if tracker.image_to_show %}
+        <img src="{{ tracker.image_to_show.url }}" alt="Imagen de rastreo">
+    {% else %}
+        <p>No se ha subido ninguna imagen.</p>
+    {% endif %}
+    <br>
+    <a href="/create/">Crear otro rastreador</a>
+</body>
+</html>
